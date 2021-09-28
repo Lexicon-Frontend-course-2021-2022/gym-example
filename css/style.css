@@ -5,7 +5,7 @@ body {
     display: grid;
 
     grid-template-rows: 210px 940px auto 830px auto 128px;
-    grid-template-columns: auto minmax(1000px, auto) auto;
+    grid-template-columns: auto minmax(auto, 2260px) auto;
 }
 
 /* Image at top of page */
@@ -102,8 +102,11 @@ header {
 
 /* Content */
 .content {
-    
     grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .content-top {
@@ -113,6 +116,31 @@ header {
 .content-bottom {
     grid-row: 5 / 6;    
 }
+
+/* Content Headers */
+.content h1 {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 60px;
+    margin-top: 100px;
+}
+
+/* First row of images */
+.content-images {
+    width: 100%;
+    background-color: #888;
+    height: 200px;
+    margin-top: 50px;
+}
+
+/* Regular content text */
+.content > p {
+    font-family: sans-serif;
+    font-size: 30px;
+    width: 75%;
+    text-align: center;
+}
+
 
 .gallery {
     grid-row: 4 / 5;
