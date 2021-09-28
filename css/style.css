@@ -23,7 +23,7 @@ body {
     background-color: rgba(0,0,0,0.7);
 }
 
-/* Background for <nav> */
+/* Background for copyright */
 .chrome-background-copyright {
     grid-row: -2 / -1;
     grid-column: 1 / -1;
@@ -233,9 +233,6 @@ header {
     font-weight: bold;
 }
 
-li {
-    
-}
 /* Gallery */
 .gallery {
     grid-row: 4 / 5;
